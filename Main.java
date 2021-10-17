@@ -5,7 +5,7 @@ import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 
-import com.anish.calabashbros.World;
+import com.anish.monsters.World;
 import com.anish.screen.Screen;
 import com.anish.screen.WorldScreen;
 
@@ -18,7 +18,7 @@ public class Main extends JFrame implements KeyListener {
     private Screen screen;
 
     public Main() {
-        super();
+        super();//调用父类构造函数
         terminal = new AsciiPanel(World.WIDTH, World.HEIGHT, AsciiFont.TALRYTH_15_15);
         add(terminal);
         pack();

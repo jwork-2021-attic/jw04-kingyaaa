@@ -1,10 +1,10 @@
-package com.anish.calabashbros;
+package com.anish.monsters;
 
 import java.awt.Color;
 
 public class Thing {
 
-    protected World world;
+    protected World world;//可以被子类访问
 
     public Tile<? extends Thing> tile;
 
