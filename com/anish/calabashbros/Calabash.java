@@ -31,5 +31,21 @@ public class Calabash extends Creature implements Comparable<Calabash> {
         this.moveTo(another.getX(), another.getY());
         another.moveTo(x, y);
     }
-
+    
+    public String getDirection(int x,int y){
+        String dir = "";
+        if(this.getX() == x && this.getY() == y + 1){
+            dir = "UP";
+        }
+        else if(this.getX() == x && this.getY() == y - 1){
+            dir = "DOWN";
+        }
+        else if(this.getX() == x - 1 && this.getY() == y){
+            dir = "RIGHT";
+        }
+        else{
+            dir = "LEFT";
+        }
+        return dir;
+    }
 }
